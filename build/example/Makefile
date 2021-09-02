@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+example/CMakeFiles/C_three.dir/rule:
+	cd /home/daniel/name-of-the-warehouse/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/C_three.dir/rule
+.PHONY : example/CMakeFiles/C_three.dir/rule
+
+# Convenience name for target.
+C_three: example/CMakeFiles/C_three.dir/rule
+
+.PHONY : C_three
+
+# fast build rule for target.
+C_three/fast:
+	cd /home/daniel/name-of-the-warehouse/build && $(MAKE) -f example/CMakeFiles/C_three.dir/build.make example/CMakeFiles/C_three.dir/build
+.PHONY : C_three/fast
+
+# Convenience name for target.
+example/CMakeFiles/C_two.dir/rule:
+	cd /home/daniel/name-of-the-warehouse/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/C_two.dir/rule
+.PHONY : example/CMakeFiles/C_two.dir/rule
+
+# Convenience name for target.
+C_two: example/CMakeFiles/C_two.dir/rule
+
+.PHONY : C_two
+
+# fast build rule for target.
+C_two/fast:
+	cd /home/daniel/name-of-the-warehouse/build && $(MAKE) -f example/CMakeFiles/C_two.dir/build.make example/CMakeFiles/C_two.dir/build
+.PHONY : C_two/fast
+
+# Convenience name for target.
 example/CMakeFiles/C_one.dir/rule:
 	cd /home/daniel/name-of-the-warehouse/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/C_one.dir/rule
 .PHONY : example/CMakeFiles/C_one.dir/rule
@@ -464,6 +494,60 @@ src/C_one.cpp.s:
 	cd /home/daniel/name-of-the-warehouse/build && $(MAKE) -f example/CMakeFiles/C_one.dir/build.make example/CMakeFiles/C_one.dir/src/C_one.cpp.s
 .PHONY : src/C_one.cpp.s
 
+src/C_three.o: src/C_three.cpp.o
+
+.PHONY : src/C_three.o
+
+# target to build an object file
+src/C_three.cpp.o:
+	cd /home/daniel/name-of-the-warehouse/build && $(MAKE) -f example/CMakeFiles/C_three.dir/build.make example/CMakeFiles/C_three.dir/src/C_three.cpp.o
+.PHONY : src/C_three.cpp.o
+
+src/C_three.i: src/C_three.cpp.i
+
+.PHONY : src/C_three.i
+
+# target to preprocess a source file
+src/C_three.cpp.i:
+	cd /home/daniel/name-of-the-warehouse/build && $(MAKE) -f example/CMakeFiles/C_three.dir/build.make example/CMakeFiles/C_three.dir/src/C_three.cpp.i
+.PHONY : src/C_three.cpp.i
+
+src/C_three.s: src/C_three.cpp.s
+
+.PHONY : src/C_three.s
+
+# target to generate assembly for a file
+src/C_three.cpp.s:
+	cd /home/daniel/name-of-the-warehouse/build && $(MAKE) -f example/CMakeFiles/C_three.dir/build.make example/CMakeFiles/C_three.dir/src/C_three.cpp.s
+.PHONY : src/C_three.cpp.s
+
+src/C_two.o: src/C_two.cpp.o
+
+.PHONY : src/C_two.o
+
+# target to build an object file
+src/C_two.cpp.o:
+	cd /home/daniel/name-of-the-warehouse/build && $(MAKE) -f example/CMakeFiles/C_two.dir/build.make example/CMakeFiles/C_two.dir/src/C_two.cpp.o
+.PHONY : src/C_two.cpp.o
+
+src/C_two.i: src/C_two.cpp.i
+
+.PHONY : src/C_two.i
+
+# target to preprocess a source file
+src/C_two.cpp.i:
+	cd /home/daniel/name-of-the-warehouse/build && $(MAKE) -f example/CMakeFiles/C_two.dir/build.make example/CMakeFiles/C_two.dir/src/C_two.cpp.i
+.PHONY : src/C_two.cpp.i
+
+src/C_two.s: src/C_two.cpp.s
+
+.PHONY : src/C_two.s
+
+# target to generate assembly for a file
+src/C_two.cpp.s:
+	cd /home/daniel/name-of-the-warehouse/build && $(MAKE) -f example/CMakeFiles/C_two.dir/build.make example/CMakeFiles/C_two.dir/src/C_two.cpp.s
+.PHONY : src/C_two.cpp.s
+
 src/hello_world.o: src/hello_world.cpp.o
 
 .PHONY : src/hello_world.o
@@ -501,6 +585,8 @@ help:
 	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... C_three"
+	@echo "... C_two"
 	@echo "... C_one"
 	@echo "... list_install_components"
 	@echo "... roscpp_generate_messages_py"
@@ -525,6 +611,12 @@ help:
 	@echo "... src/C_one.o"
 	@echo "... src/C_one.i"
 	@echo "... src/C_one.s"
+	@echo "... src/C_three.o"
+	@echo "... src/C_three.i"
+	@echo "... src/C_three.s"
+	@echo "... src/C_two.o"
+	@echo "... src/C_two.i"
+	@echo "... src/C_two.s"
 	@echo "... src/hello_world.o"
 	@echo "... src/hello_world.i"
 	@echo "... src/hello_world.s"
