@@ -264,7 +264,7 @@ gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
 gtest/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniel/name-of-the-warehouse/build/CMakeFiles --progress-num=4,5,6,7 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniel/name-of-the-warehouse/build/CMakeFiles --progress-num=6,7,8,9 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -296,7 +296,7 @@ clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 gtest/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniel/name-of-the-warehouse/build/CMakeFiles --progress-num=1,2,3 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniel/name-of-the-warehouse/build/CMakeFiles --progress-num=3,4,5 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -347,7 +347,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniel/name-of-the-warehouse/build/CMakeFiles --progress-num=10,11 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniel/name-of-the-warehouse/build/CMakeFiles --progress-num=12,13 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -379,7 +379,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniel/name-of-the-warehouse/build/CMakeFiles --progress-num=8,9 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniel/name-of-the-warehouse/build/CMakeFiles --progress-num=10,11 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -408,11 +408,13 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory example
 
 # Convenience name for "all" pass in the directory.
+example/all: example/CMakeFiles/C_one.dir/all
 example/all: example/CMakeFiles/hello_world.dir/all
 
 .PHONY : example/all
 
 # Convenience name for "clean" pass in the directory.
+example/clean: example/CMakeFiles/C_one.dir/clean
 example/clean: example/CMakeFiles/roscpp_generate_messages_py.dir/clean
 example/clean: example/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 example/clean: example/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
@@ -437,6 +439,43 @@ example/clean: example/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 example/preinstall:
 
 .PHONY : example/preinstall
+
+#=============================================================================
+# Target rules for target example/CMakeFiles/C_one.dir
+
+# All Build rule for target.
+example/CMakeFiles/C_one.dir/all:
+	$(MAKE) -f example/CMakeFiles/C_one.dir/build.make example/CMakeFiles/C_one.dir/depend
+	$(MAKE) -f example/CMakeFiles/C_one.dir/build.make example/CMakeFiles/C_one.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniel/name-of-the-warehouse/build/CMakeFiles --progress-num=1,2 "Built target C_one"
+.PHONY : example/CMakeFiles/C_one.dir/all
+
+# Include target in all.
+all: example/CMakeFiles/C_one.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+example/CMakeFiles/C_one.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/name-of-the-warehouse/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/C_one.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniel/name-of-the-warehouse/build/CMakeFiles 0
+.PHONY : example/CMakeFiles/C_one.dir/rule
+
+# Convenience name for target.
+C_one: example/CMakeFiles/C_one.dir/rule
+
+.PHONY : C_one
+
+# clean rule for target.
+example/CMakeFiles/C_one.dir/clean:
+	$(MAKE) -f example/CMakeFiles/C_one.dir/build.make example/CMakeFiles/C_one.dir/clean
+.PHONY : example/CMakeFiles/C_one.dir/clean
+
+# clean rule for target.
+clean: example/CMakeFiles/C_one.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target example/CMakeFiles/roscpp_generate_messages_py.dir
@@ -669,7 +708,7 @@ clean: example/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 example/CMakeFiles/hello_world.dir/all:
 	$(MAKE) -f example/CMakeFiles/hello_world.dir/build.make example/CMakeFiles/hello_world.dir/depend
 	$(MAKE) -f example/CMakeFiles/hello_world.dir/build.make example/CMakeFiles/hello_world.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniel/name-of-the-warehouse/build/CMakeFiles --progress-num=12,13 "Built target hello_world"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/daniel/name-of-the-warehouse/build/CMakeFiles --progress-num=14,15 "Built target hello_world"
 .PHONY : example/CMakeFiles/hello_world.dir/all
 
 # Include target in all.

@@ -137,6 +137,8 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/example_node.cpp)
 add_executable(hello_world src/hello_world.cpp)
 target_link_libraries(hello_world ${catkin_LIBRARIES})
+add_executable(C_one src/C_one.cpp)
+target_link_libraries(C_one ${catkin_LIBRARIES})
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
