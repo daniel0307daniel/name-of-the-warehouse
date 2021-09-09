@@ -2,4 +2,4 @@
 source_root_dir = '/home/daniel/name-of-the-warehouse/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/daniel/name-of-the-warehouse/devel;/opt/ros/melodic'.split(';') if '/home/daniel/name-of-the-warehouse/devel;/opt/ros/melodic' != '' else []
+underlay_workspaces = '/opt/ros/melodic'.split(';') if '/opt/ros/melodic' != '' else []
