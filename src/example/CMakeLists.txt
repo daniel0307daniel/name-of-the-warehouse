@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   message_runtime
   roscpp
+  rospy
   std_msgs
 )
 

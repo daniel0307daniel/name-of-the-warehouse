@@ -122,6 +122,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/melodic/share/rosgraph_msgs/cmake/rosgraph_msgs-msg-extras.cmake"
   "/opt/ros/melodic/share/rosgraph_msgs/cmake/rosgraph_msgsConfig-version.cmake"
   "/opt/ros/melodic/share/rosgraph_msgs/cmake/rosgraph_msgsConfig.cmake"
+  "/opt/ros/melodic/share/rospy/cmake/rospyConfig-version.cmake"
+  "/opt/ros/melodic/share/rospy/cmake/rospyConfig.cmake"
   "/opt/ros/melodic/share/rostime/cmake/rostimeConfig-version.cmake"
   "/opt/ros/melodic/share/rostime/cmake/rostimeConfig.cmake"
   "/opt/ros/melodic/share/std_msgs/cmake/std_msgs-msg-extras.cmake"
